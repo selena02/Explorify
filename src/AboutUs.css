@@ -1,0 +1,109 @@
+.about-container {
+  background-size: cover;
+  background-image: url("./assets/about.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-container {
+  transform: translateY(-10vh);
+  display: flex;
+  justify-content: center;
+  gap: 12vw;
+}
+
+.about-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-title {
+  margin-right: 30vw;
+  font-family: "Playfair bold";
+  font-size: 6em;
+  color: aliceblue;
+  text-shadow: -0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5), -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6vw;
+  padding: 2em 0;
+  margin-bottom: 10em;
+}
+
+.pink-text {
+  color: #db9090;
+  text-shadow: -0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5), -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  margin-top: 3em;
+  width: 30em;
+  font-family: "Playfair medium";
+  font-size: 2.4em;
+  color: aliceblue;
+}
+
+.description-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8em;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.stat {
+  flex-basis: calc(50% - 12em);
+  margin: 1em;
+  padding: 2em;
+  border-right: 1px solid #e8a9a9; /* Right border */
+  border-bottom: 1px solid #6e5353; /* Bottom border */
+  transition: all 0.4s ease;
+  border-radius: 2em;
+}
+
+.stat:hover {
+  background-color: aliceblue;
+}
+
+.stat:hover .label {
+  color: #db9090;
+}
+
+.number {
+  font-size: 3em;
+  color: #db9090;
+  text-shadow: -0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5), -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  font-family: "Playfair bold";
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 2em;
+  color: aliceblue;
+}
+
+.about-image {
+  width: 48em;
+  height: 50em;
+  border-radius: 50%;
+}

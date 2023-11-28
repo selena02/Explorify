@@ -1,0 +1,191 @@
+:root {
+  --primary-color: #e8a9a9;
+}
+
+.hero-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url("./assets/landing.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.application-header.scrolled {
+  background-color: #333333e2;
+  transition: background-color 0.5s;
+}
+
+#hero-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  width: 100em;
+  margin-bottom: 15vh;
+  color: aliceblue;
+}
+
+#hero-content-container > h1 {
+  font-family: "Playfair bold";
+  font-size: 8em;
+  text-align: center;
+}
+.yellow-text {
+  color: var(--primary-color);
+}
+
+#hero-content-container > p {
+  font-family: "Playfair medium";
+  font-size: 2.4em;
+  text-align: center;
+}
+
+#searchbar-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#searchbar-input {
+  width: 100%;
+  padding: 1em 10em 1em 3.4em;
+  border-radius: 2em;
+  font-size: 1.8em;
+}
+#searchbar-input:focus {
+  box-shadow: 0 0 0.6em #888888;
+  outline: none;
+}
+#searchbar-input::placeholder {
+  opacity: 0.6;
+}
+
+.search-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  height: 78%;
+  width: 10em;
+  right: 1.1em;
+  border-radius: 4em;
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: #b09292;
+}
+
+.search-button > p {
+  font-size: 1.4em;
+  font-family: "Playfair medium";
+}
+
+#button-icon {
+  height: 1em;
+  width: 1em;
+  font-size: 2em;
+}
+
+#location-icon {
+  position: absolute;
+  color: var(--primary-color);
+  font-size: 3.6em;
+  margin-left: 0.5em;
+}
+
+.material-icons {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+
+.application-header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  height: 6em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
+  width: 17.33em;
+}
+.logo {
+  margin-left: 4em;
+  height: 80%;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+}
+.navigation-list li {
+  list-style: none;
+  font-size: 2em;
+  font-family: "Playfair medium";
+  color: aliceblue;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.navigation-list li:hover {
+  color: rgba(240, 248, 255, 0.523);
+}
+
+.login-register-buttons {
+  display: flex;
+  gap: 3em;
+}
+
+.login-button {
+  height: 2.5em;
+  width: 10em;
+  right: 1.1em;
+  border-radius: 4em;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-right: 3em;
+}
+
+.register-button:hover {
+  background-color: rgba(240, 248, 255, 0.523);
+}
+
+.login-button:hover {
+  background-color: rgba(240, 248, 255, 0.523);
+}
+
+.login-register-text {
+  font-size: 1.4em;
+  font-family: "Playfair medium";
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .landing-page-container {
+    align-items: flex-start;
+    padding-top: 20vh;
+  }
+  #hero-content-container {
+    width: 95vw;
+  }
+  #hero-content-container > h1 {
+    font-size: 6em;
+  }
+}
