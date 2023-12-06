@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import "../Hero.css";
+import "../Navbar.css";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,11 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
-      className={
-        scrolled ? "application-header scrolled" : "application-header"
-      }
-    >
+    <div id="application-header" className={scrolled ? "scrolled" : ""}>
       <div className="logo-container">
         <img src={logo} alt="Explorify Logo" className="logo" />
       </div>
@@ -35,11 +32,13 @@ const Navbar = () => {
           <li>About Us</li>
         </ul>
       </nav>
-      <div className="login-register-buttons">
-        <button className="login-button">
-          <span className="login-register-text">Login</span>
-        </button>
-      </div>
+      <Link to="/authentication">
+        <div className="login-register-buttons">
+          <button className="login-button">
+            <span className="login-register-text">Login</span>
+          </button>
+        </div>
+      </Link>
     </div>
   );
 };

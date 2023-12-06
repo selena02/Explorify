@@ -1,0 +1,22 @@
+.auth-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  background: url("./assets/auth.jpeg");
+  width: 50vw;
+  height: 93vh;
+  background-repeat: no-repeat;
+}
+
+.login-container,
+.register-container {
+  width: 50vw;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

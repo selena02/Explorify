@@ -1,0 +1,80 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  position: relative;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 45em;
+  height: 52em;
+  border-radius: 6em;
+  gap: 10em;
+  background-color: rgba(240, 248, 255, 0.596);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  font-family: "Playfair bold";
+  font-size: 5em;
+  color: var(--primary-color);
+  text-shadow: -0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px -0.5px 0.5px rgba(0, 0, 0, 0.5), -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.form-input {
+  border: 1px solid black;
+  height: 3em;
+  width: 20em;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.form-input::placeholder {
+  position: center;
+  text-align: center;
+  color: gray;
+}
+
+.register-login-button {
+  margin-top: 2em;
+  border-radius: 4em;
+  background-color: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  width: 14em;
+  height: 2.6em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-login-button > span {
+  font-size: 1.5em;
+  color: aliceblue;
+  font-family: "Playfair medium";
+}
+.register-login-button:hover {
+  background-color: #b09292;
+}
+
+.reddirect {
+  font-family: "Playfair medium";
+  font-size: 1.8em;
+  color: var(--primary-color);
+  text-shadow: -0.3px -0.3px 0.3px rgba(0, 0, 0, 0.3),
+    0.3px -0.3px 0.3px rgba(0, 0, 0, 0.3), -0.3px 0.3px 0.3px rgba(0, 0, 0, 0.3),
+    0.3px 0.3px 0.3px rgba(0, 0, 0, 0.3);
+}
+
+.auth-error {
+  position: absolute;
+  color: red;
+  margin-bottom: 15em;
+  font-size: 1.5em;
+}

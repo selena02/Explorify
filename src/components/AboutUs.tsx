@@ -1,4 +1,3 @@
-// AboutUs.tsx
 import Card from "./Card";
 import "../AboutUs.css";
 import card1 from "../assets/card1.png";

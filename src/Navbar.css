@@ -1,0 +1,75 @@
+#application-header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#application-header.scrolled {
+  background-color: #333333e2;
+  transition: background-color 0.7s;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
+  width: 17.33em;
+}
+
+.logo {
+  margin-left: 4em;
+  height: 80%;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+}
+.navigation-list li {
+  list-style: none;
+  font-size: 2em;
+  font-family: "Playfair medium";
+  color: aliceblue;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.navigation-list li:hover {
+  color: rgba(240, 248, 255, 0.523);
+}
+
+.login-register-buttons {
+  display: flex;
+  gap: 3em;
+}
+.login-button {
+  height: 2.5em;
+  width: 10em;
+  right: 1.1em;
+  border-radius: 4em;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-right: 3em;
+}
+
+.register-button:hover {
+  background-color: rgba(240, 248, 255, 0.523);
+}
+
+.login-button:hover {
+  background-color: rgba(240, 248, 255, 0.523);
+}
+
+.login-register-text {
+  font-size: 1.4em;
+  font-family: "Playfair medium";
+  color: white;
+}
